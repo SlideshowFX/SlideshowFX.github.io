@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 	<meta charset="UTF-8"> 
 	<title>SlideshowFX, presentations evolved</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/onepagescroll/onepage-scroll.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="libs/onepagescroll/onepagescroll.min.js" type="text/javascript"></script>
 </head>
 <body>
-<h1>Welcome !</h1>
+<div class="main">
+	<section class="gray logo">
+		<h1>SlideshowFX</h1>
+		<h2>Slide decks, <span class="important">evolved</span>.</h2>
+		<div>
+			<i class="fa fa-cloud-download fa-5x fa-fw ready"></i>
+			<br /><span class="ready">Coming soon</span>
+		</div>
+	</section>
+	<section class="gray">
+		<h3>HTML5 based slide decks</h3>
+		<div class="center">
+			<ul>
+				<li>Write your content using HTML, markdown, textile or asciidoctor</li>
+				<li>Lots of JavaScript libraries supported
+					<ul>
+						<li>Code highlighting</li>
+						<li>Charts</li>
+						<li>Diagrams</li>
+						<li>...</li>
+					</ul>
+				</li>
+				<li>Use plain CSS for customizing your slide decks</li>
+			</ul>
+		</div>
+	</section>
+	<section class="gray">
+		<h3>Interactive contents</h3>
+		<div class="center">
+			<p>The audience :</p>
+			<ul>
+				<li>chats with you</li>
+				<li>answers to your quizs</li>
+			</ul>
+			<p>You :</p>
+			<ul>
+				<li>change slides using a <a href="https://leapmotion.com" target="_blank">LeapMotion</a> controller</li>
+				<li>show an interactive pointer, still with your LeapMotion controller</li>
+			</ul>
+		</div>
+	</section>
+	<section class="gray">
+		<h3>About</h3>
+			<a class="icon" href="https://github.com/twasyl/SlideshowFX" target="_blank"><i class="fa fa-github fa-5x fa-fw" ></i></a>
+			<a class="icon" href="https://twitter.com/SlideshowFX" target="_blank"><i class="fa fa-twitter fa-5x fa-fw"></i></a>
+	</section>
+</div>
+<script type="text/javascript">
+	onePageScroll(".main", {
+	   sectionContainer: "section",
+	   animationTime: 1000,
+	   pagination: true,
+	   updateURL: true,
+	   beforeMove: function(index) {},
+	   afterMove: function(index) {},
+	   loop: true,
+	   keyboard: true, 
+	   responsiveFallback: false
+	});
+</script>
 </body>
 </html>

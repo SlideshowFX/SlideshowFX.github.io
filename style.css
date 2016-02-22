@@ -1,0 +1,121 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+div.main > section {
+	margin: auto;
+	text-align: center;
+}
+
+div.main > section.logo {
+	background-image: url('img/SlideshowFX.svg');
+	background-repeat: no-repeat;
+	background-size: 12%;
+	background-position: 5% 30%;
+}
+
+div.main > section.black {
+	background-color: black;
+}
+
+div.main > section.gray {
+	background-color: whitesmoke;
+}
+
+div.main .important {
+	color: darkred;
+}
+
+div.main .ready {
+	color: #1d9d74;
+}
+
+div.main > section > h1,
+div.main > section > h2,
+div.main > section > h3,
+div.main > section > h4,
+div.main > section > h5,
+div.main > section > h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 0;
+	padding-top: 8%;
+	color: #636363;
+}
+
+div.main > section > h1 {
+	font-size: 80pt;
+}
+
+div.main > section > h2 {
+	font-size: 60pt;
+}
+
+div.main > section > h1 ~ h2 {
+	padding-top: 0;
+}
+
+div.main > section > h3 {
+	font-size: 40pt;
+}
+
+div.main > section li {
+	list-style: none;
+}
+
+div.main > section li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+  	display: inline-block;
+    padding-right: 10px;
+    color: green;
+    line-height: 30pt;
+}
+
+div.main > section li li:before {
+	content: '\f061';
+	color: black;
+}
+
+div.main > section > div.center {
+	width: 80%;
+	margin: auto;
+	text-align: left;
+}
+
+div.main a {
+	color: black;
+	text-decoration: none;
+}
+
+div.main a:after {
+	content: '\f061';
+	font-family: FontAwesome;
+	text-decoration: none;
+	color: black;
+	padding-right: 5px;
+	font-size: 8px;
+}
+
+div.main a:hover {
+	color: darkgray;
+	text-decoration: none;
+}
+
+div.main a:hover:after {
+	color: darkgray;
+}
+
+div.main .fa-twitter,
+div.main .fa-github {
+	color: black;
+}
+
+div.main a.icon:after {
+	content: '';
+	padding-right: 0;
+}
+
+div.main .fa-twitter:hover,
+div.main .fa-github:hover {
+	color: darkgray;
+}
