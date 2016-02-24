@@ -119,3 +119,21 @@ div.main .fa-twitter:hover,
 div.main .fa-github:hover {
 	color: darkgray;
 }
+
+div.main div.left-block {
+	float: left;
+}
+
+div.main div.right-block {
+	float: right;
+}
+
+
+#copyright {
+	position: absolute;
+	bottom: 5px;
+	color: #636363;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
