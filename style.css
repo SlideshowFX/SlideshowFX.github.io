@@ -1,68 +1,60 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f6f6f6;
 }
 
-div.main > section {
+section {
+	width: 1150px;
 	margin: auto;
 	text-align: center;
+	border-width: 0
+	border-style: solid;
+	border-color: lightgray;
 }
 
-div.main > section.logo {
-	background-image: url('img/SlideshowFX.svg');
-	background-repeat: no-repeat;
-	background-size: 12%;
-	background-position: 5% 30%;
+section:nth-of-type(even) {
+	background-color: white;
+	margin: 20px auto;
+	padding-bottom: 8%;
+	box-shadow: 1px 1px 5px #555;
 }
 
-div.main > section.black {
-	background-color: black;
-}
-
-div.main > section.gray {
-	background-color: whitesmoke;
-}
-
-div.main .important {
+.important {
 	color: darkred;
 }
 
-div.main .ready {
+.ready {
 	color: #1d9d74;
 }
 
-div.main > section > h1,
-div.main > section > h2,
-div.main > section > h3,
-div.main > section > h4,
-div.main > section > h5,
-div.main > section > h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin-top: 0;
 	padding-top: 8%;
 	color: #636363;
 }
 
-div.main > section > h1 {
+h1 {
 	font-size: 80pt;
 }
 
-div.main > section > h2 {
+h2 {
 	font-size: 60pt;
 }
 
-div.main > section > h1 ~ h2 {
+h1 ~ h2 {
 	padding-top: 0;
 }
 
-div.main > section > h3 {
+h3 {
 	font-size: 40pt;
 }
 
-div.main > section li {
+section li {
 	list-style: none;
 }
 
-div.main > section li:before {
+section li::before {
     content: '\f00c';
     font-family: FontAwesome;
   	display: inline-block;
@@ -71,23 +63,23 @@ div.main > section li:before {
     line-height: 30pt;
 }
 
-div.main > section li li:before {
+section li li::before {
 	content: '\f061';
 	color: black;
 }
 
-div.main > section > div.center {
+section > div.center {
 	width: 80%;
 	margin: auto;
 	text-align: left;
 }
 
-div.main a {
+a {
 	color: black;
 	text-decoration: none;
 }
 
-div.main a:after {
+a::after {
 	content: '\f061';
 	font-family: FontAwesome;
 	text-decoration: none;
@@ -96,44 +88,76 @@ div.main a:after {
 	font-size: 8px;
 }
 
-div.main a:hover {
+a:hover {
 	color: darkgray;
 	text-decoration: none;
 }
 
-div.main a:hover:after {
+a:hover::after {
 	color: darkgray;
 }
 
-div.main .fa-twitter,
-div.main .fa-github {
+.fa-twitter, .fa-github {
 	color: black;
 }
 
-div.main a.icon:after {
+.fa-twitter:hover, .fa-github:hover {
+	color: darkgray;
+}
+
+a.icon::after {
 	content: '';
 	padding-right: 0;
 }
 
-div.main .fa-twitter:hover,
-div.main .fa-github:hover {
-	color: darkgray;
+#chat_quiz_img, #uis_img {
+	height: 300px;
+	padding-top: 10%;
 }
 
-div.main div.left-block {
+
+div.left-block {
 	float: left;
 }
 
-div.main div.right-block {
+div.right-block {
 	float: right;
 }
 
+div.clear {
+	clear: both;
+}
+
+#logo {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: 12%;
+}
 
 #copyright {
-	position: absolute;
-	bottom: 5px;
 	color: #636363;
-	margin: auto;
-	text-align: center;
-	width: 100%;
+	margin: 30px auto;
+}
+
+@media (max-width: 1149px) {
+	section {
+		width: 100%;
+	}
+
+	div.left-block, div.right-block {
+		clear: both;
+		width: 100%;
+	}
+
+	div.right-block {
+		text-align: center;
+	}
+}
+
+@media (max-width: 800px) {
+	#logo {
+		top: 1%;
+		left: 1%;
+	}
 }
