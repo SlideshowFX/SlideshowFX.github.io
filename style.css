@@ -23,8 +23,17 @@ section:nth-of-type(even) {
 	color: darkred;
 }
 
-.ready {
-	color: #1d9d74;
+.btn-download {
+	background-color: #1d9d74;
+}
+
+.btn-download .icon {
+	color: white;
+}
+
+.btn-download .version {
+	color: white;
+	font-size: 15pt;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,12 +106,21 @@ a:hover::after {
 	color: darkgray;
 }
 
+div.about a {
+	padding: 0 10px 0 10px;
+}
+
 .fa-twitter, .fa-github {
 	color: black;
 }
 
-.fa-twitter:hover, .fa-github:hover {
+.fa-twitter:hover, .fa-github:hover, .bintray:hover {
 	color: darkgray;
+}
+
+.bintray {
+	margin-top: -40px;
+	fill: red;
 }
 
 a.icon::after {
